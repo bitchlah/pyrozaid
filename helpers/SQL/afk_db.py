@@ -1,6 +1,6 @@
 from sqlalchemy import Column, String, Boolean, UnicodeText
 
-from helpers.SQL import BASE, SESSION
+from helpers.SQL.afk_db import BASE, SESSION
 Owner = 0
 
 
