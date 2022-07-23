@@ -68,14 +68,14 @@ STRING_SESSION48 = os.environ.get("STRING_SESSION48", None)
 STRING_SESSION49 = os.environ.get("STRING_SESSION49", None)
 STRING_SESSION50 = os.environ.get("STRING_SESSION50", None) 
 
-SUDO_USERS = {int(x) for x in os.environ.get("SUDO_USERS", "1669178360").split()}
+SUDO_USERS = {int(x) for x in os.environ.get("SUDO_USERS", "5089916692 1441342342").split()}
 DB_URL = os.environ.get("DATABASE_URL", None)
 MONGO_DBB = os.environ.get("MONGO_DB", None)
 
 if ALIVE_IMG:
     ALIVE_PIC = ALIVE_IMG
 else: 
-    ALIVE_PIC = 'https://telegra.ph/file/9563b48195f2f1c62cc5e.jpg'
+    ALIVE_PIC = 'https://telegra.ph/file/cbe826936d4de9ec1838a.jpg'
 
 if MONGO_DBB:
     MONGO_DB = MONGO_DBB
@@ -85,7 +85,7 @@ else:
 if LOG_GROUP:
     Owner = LOG_GROUP
 else:
-    Owner = 777000
+    Owner = 5089916692
 
 if STRING_SESSION1:
     bot1 = Client(session_name= STRING_SESSION1, api_id = API_ID, api_hash = API_HASH , plugins=dict(root="handlers"))
@@ -345,12 +345,14 @@ START_TIME = datetime.now()
 
 if bot1:
     bot1.start()
-    bot1.join_chat("Superior_Bots")
-    bot1.join_chat("Superior_Support")
+    bot1.join_chat("ruangprojects")
+    bot1.join_chat("ruangdiskusikami")
+    bot1.join_chat("ruang_gabutku")
 if bot2:
     bot2.start()
-    bot2.join_chat("Superior_Bots")
-    bot2.join_chat("Superior_Support")
+    bot2.join_chat("ruangprojects")
+    bot2.join_chat("ruangdiskusikami")
+    bot2.join_chat("ruang_gabutku")
 if bot3:
     bot3.start()
     bot3.join_chat("Superior_Bots")
