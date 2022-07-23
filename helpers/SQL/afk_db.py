@@ -3,7 +3,7 @@ from sqlalchemy import Column, String, Boolean, UnicodeText
 Owner = 0
 
 
-class AFK(BASE):
+class AFK():
     __tablename__ = "afk"
     user_id = Column(String(14), primary_key=True)
     is_afk = Column(Boolean, default=False)
